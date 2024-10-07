@@ -1,0 +1,49 @@
+.select select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Agrega una imagen como fondo para el triángulo */
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M442.7 154.9c-9.4-9.4-24.6-9.4-33.9 0L224 360.1 38.3 154.9c-9.4-9.4-24.6-9.4-33.9 0-9.4 9.4-9.4 24.6 0 33.9l198.4 198.4c9.4 9.4 24.6 9.4 33.9 0l198.4-198.4c9.4-9.5 9.4-24.7-.1-34.1z"/></svg>');
+    background-position: calc(100% - 13px) center;
+    background-repeat: no-repeat;
+    background-size: 1.1rem;
+    padding-left: 12px;
+    font-size: 17px;
+}
+
+.select select option{
+    font-size: 18px;
+}
+
+.Container{
+    user-select: none;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    background-color: white;
+    padding: 16px;
+    height: 420px;
+    max-height: 90%;
+    width: 600px;
+    max-width: 600px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+@media (max-width:899px){
+
+    .Container{
+        top: 50%;
+        right: 50%;
+        transform: translate(50%,-50%);
+        width: 90%;
+    }
+
+    .select select{
+        background-color: transparent;
+    }
+}
